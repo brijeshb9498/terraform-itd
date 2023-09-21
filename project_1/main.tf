@@ -12,7 +12,7 @@ module "root_module_create_s3" {
 }
 
 module "root_module_create_dynamo" {
-    source = "./modules/dynamobd_module"
+    source = "./modules/create_dynamodb"
     dynamobd_name = var.root_dynamobd_name
     hash_key = var.root_hash_key
 }
