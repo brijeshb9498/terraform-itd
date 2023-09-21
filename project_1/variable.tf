@@ -14,3 +14,12 @@ variable "root_sse_algorithm_type" {
   type        = string
 }
 
+variable "root_dynamobd_name" {
+    type = string
+    default = ""  
+}
+
+variable "root_hash_key" {
+    type = string
+    default = ""  
+}
