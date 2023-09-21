@@ -10,3 +10,9 @@ module "root_module_create_s3" {
   sse_algorithm_type= var.root_sse_algorithm_type
   
 }
+
+module "root_module_create_dynamo" {
+    source = "./modules/dynamobd_module"
+    dynamobd_name = var.root_dynamobd_name
+    hash_key = var.root_hash_key
+}
