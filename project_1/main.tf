@@ -5,7 +5,7 @@ module "root_module_create_ec2" {
 }
 
 module "root_module_create_s3" {
-  source = "./modules/create_s3"
+  source = "./modules/create_ec2/create_s3"
   bucket_name= var.root_bucket_name
   sse_algorithm_type= var.root_sse_algorithm_type
   
