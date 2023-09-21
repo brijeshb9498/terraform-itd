@@ -7,4 +7,10 @@ terraform {
         }
     }
 
-} 
+    backend "s3" {
+        bucket = "my-s3-backend"
+        key = "main/terraform.tfstate"
+        region = "us-west-2"
+        dynamodb_table = "dynamodb_state_lockgin_table"
+    }
+}
